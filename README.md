@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# QR/BARCODE SCANNER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+- This is a React-based QR/Barcode scanning application that allows users to:
+- Create scanning sessions with location tracking
+- Scan QR/barcodes and validate them against an uploaded CSV database
+- View real-time statistics and scan history
+- Export scan results as CSV
 
-## Available Scripts
+## Features
+### Session Management
+- Create new scanning sessions with user details and location
+- Track active sessions using Redux
+- End sessions when complete
 
-In the project directory, you can run:
+### Scanning Functionality
+- Camera-based QR/barcode scanning
+- Manual scan simulation for testing
+- Real-time validation against uploaded codes
+- Scan limit enforcement
 
-### `npm start`
+### Data Management
+- CSV file upload with validation
+- Scan history tracking
+- Statistics dashboard
+- Data export functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### UI Components
+- Responsive design with Tailwind CSS
+- Form validation and error handling
+- Location detection (automatic and manual)
+- Status indicators and alerts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
+### Pages
+- SetupPage: Initial session configuration
+- ScanPage: Main scanning interface
+- StatsPage: Session statistics and data management
 
-### `npm test`
+### Components
+#### Setup Components
+- FileUpload: CSV file upload with validation
+- LocationDetector: Automatic/manual location detection
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Scan Components
+- ScanResult: Displays scan validation results
+- StatsPanel: Real-time scanning statistics
 
-### `npm run build`
+#### Stats Components
+- ScansTable: Displays scan history in a table
+- ExportButton: Handles CSV export functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
+- npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run the project
+- npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Core
+- React
+- React Router
+- Redux (with React-Redux)
+- Axios
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Utilities
+- Papa Parse (CSV parsing)
+- Tailwind CSS (styling)
