@@ -35,9 +35,9 @@ const LocationDetector = ({ onChange }) => {
     setStatus('processing');
     // Simulate geocoding API call
     setTimeout(() => {
-      // In a real app, you would call a geocoding service here
+      
       const mockCoords = {
-        coordinates: [-0.127758, 51.507351], // Default to London coordinates
+        coordinates: [-0.127758, 51.507351], 
         manualOverride: true
       };
       setLocation(mockCoords);

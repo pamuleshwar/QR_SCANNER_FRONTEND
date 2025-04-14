@@ -41,7 +41,7 @@ const ScanPage = () => {
           }
         );
   
-        console.log('Scan response:', response.data);
+        // console.log('Scan response:', response.data);
         setScanResult(response.data);
         updateStats(response.data.status);
       } catch (err) {
